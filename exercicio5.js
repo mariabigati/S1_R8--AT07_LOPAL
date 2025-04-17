@@ -1,4 +1,4 @@
-console.log("Exercício 5 (For)")
+;
 
 numFinal = parseInt(prompt("Digite um número inteiro, e contarei até ele."));
 
@@ -9,18 +9,18 @@ if (isNaN(numFinal)) {
     for (contador = 1; contador <= numFinal; contador++) {
         console.log(contador);
     }
-    console.log("FIM")
+    console.log("FIM");
 
-    console.log("Exercício 5 (While)")
+    console.log("Exercício 5 (While)");
 
     contador = 1;
     while (contador <= numFinal) {
         console.log(contador);
         contador++;
     }
-    console.log("FIM")
+    console.log("FIM");
 
-    console.log("Exercício 5 (Do-While)")
+    console.log("Exercício 5 (Do-While)");
 
     contador = 1;
     do {

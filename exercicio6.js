@@ -1,4 +1,4 @@
-console.log("Exercício 6 (For)")
+console.log("Exercício 6 (For)");
 
 for (contador = 30 ; contador >= 1 ; contador--) {
     if (contador % 4 == 0) {
@@ -21,7 +21,7 @@ while (contador >= 1) {
     }
 } 
 
-console.log("Exercício 6 (Do-While)")
+console.log("Exercício 6 (Do-While)");
 
 contador = 30;
 do {
