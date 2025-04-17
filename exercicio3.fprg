@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio3"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-17 09:18:42 "/>
+        <attribute name="created" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNjsiMDk6MTU6MTUgIjsyMzMy"/>
+        <attribute name="edited" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNzsiMDk6MTg6NDAgIjsxO0RFUy1NSDtTTjUxNC0xMjQyOTgwOzIwMjUtMDQtMTY7IjA5OjE4OjA3ICI7ZXhlcmNpY2lvNS5mcHJnOzYzODE="/>
+        <attribute name="edited" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNzsiMDk6MTg6NDIgIjszOzI0NDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="O la&#231;o de repeti&#231;&#227;o mais apropriado."/>
+            <output expression="&quot;Exerc&#237;cio 3 com For.&quot;" newline="True"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <for variable="contador" start="0" end="30" direction="inc" step="3">
+                <output expression="contador" newline="True"/>
+            </for>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+            <output expression="&quot;Exerc&#237;cio 3 com While.&quot;" newline="True"/>
+            <assign variable="contador" expression="0"/>
+            <while expression="contador &lt;= 30">
+                <output expression="contador" newline="True"/>
+                <assign variable="contador" expression="contador + 3"/>
+            </while>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+            <output expression="&quot;Exerc&#237;cio 3 com Do-While.&quot;" newline="True"/>
+            <assign variable="contador" expression="0"/>
+            <do expression="contador &lt;= 30">
+                <output expression="contador" newline="True"/>
+                <assign variable="contador" expression="contador + 3"/>
+            </do>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

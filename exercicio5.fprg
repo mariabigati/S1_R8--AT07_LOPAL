@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio5"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-17 09:21:11 "/>
+        <attribute name="created" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNjsiMDk6MTg6MDcgIjsyMzM2"/>
+        <attribute name="edited" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNzsiMDk6MjE6MTEgIjs2OzI0Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Exerc&#237;cio 5 com For.&quot;" newline="True"/>
+            <declare name="contador, numFinal" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero inteiro, e contarei at&#233; ele.&quot;" newline="True"/>
+            <input variable="numFinal"/>
+            <for variable="contador" start="1" end="numFinal" direction="inc" step="1">
+                <output expression="contador" newline="True"/>
+            </for>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+            <comment text="O la&#231;o de repeti&#231;&#227;o mais apropriado."/>
+            <output expression="&quot;Exerc&#237;cio 5 com While.&quot;" newline="True"/>
+            <assign variable="contador" expression="0"/>
+            <while expression="contador &lt; numFinal">
+                <assign variable="contador" expression="contador + 1"/>
+                <output expression="contador" newline="True"/>
+            </while>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+            <output expression="&quot;Exerc&#237;cio 5 com Do-While.&quot;" newline="True"/>
+            <assign variable="contador" expression="0"/>
+            <do expression="contador &lt; numFinal">
+                <assign variable="contador" expression="contador + 1"/>
+                <output expression="contador" newline="True"/>
+            </do>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

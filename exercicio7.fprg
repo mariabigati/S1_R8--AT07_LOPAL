@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio7"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-17 09:44:42 "/>
+        <attribute name="created" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNjsiMDk6MjU6NTkgIjsyMzQx"/>
+        <attribute name="edited" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNzsiMDk6MTc6MDcgIjsxO0RFUy1NSDtTTjUxNC0xMjQyOTgwOzIwMjUtMDQtMTY7IjA5OjE4OjA3ICI7ZXhlcmNpY2lvNS5mcHJnOzYzODM="/>
+        <attribute name="edited" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNzsiMDk6Mzg6MTcgIjsxO0RFUy1NSDtTTjUxNC0xMjQyOTgwOzIwMjUtMDQtMTY7IjA5OjIyOjMwICI7ZXhlcmNpY2lvNi5mcHJnOzYzNzk="/>
+        <attribute name="edited" value="REVTLU1IO1NONTE0LTEyNDI5ODA7MjAyNS0wNC0xNzsiMDk6NDQ6NDIgIjs2OzI0NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Exerc&#237;cio 7 com For.&quot;" newline="True"/>
+            <declare name="primeiroValor, ultimoValor, incremento, contagem" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro valor da contagem.&quot;" newline="True"/>
+            <input variable="primeiroValor"/>
+            <output expression="&quot;Digite o &#250;ltimo valor da contagem.&quot;" newline="True"/>
+            <input variable="ultimoValor"/>
+            <output expression="&quot;Digite o incremento da contagem.&quot;" newline="True"/>
+            <input variable="incremento"/>
+            <if expression="primeiroValor &gt; ultimoValor">
+                <then>
+                    <for variable="contagem" start="primeiroValor" end="ultimoValor" direction="dec" step="incremento">
+                        <output expression="contagem" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="contagem" start="primeiroValor" end="ultimoValor" direction="inc" step="incremento">
+                        <output expression="contagem" newline="True"/>
+                    </for>
+                </else>
+            </if>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+            <comment text="O la&#231;o de repeti&#231;&#227;o mais apropriado."/>
+            <output expression="&quot;Exerc&#237;cio 7 com While.&quot;" newline="True"/>
+            <assign variable="contagem" expression="primeiroValor"/>
+            <if expression="primeiroValor &gt; ultimoValor">
+                <then>
+                    <while expression="contagem &gt;= ultimoValor">
+                        <output expression="contagem" newline="True"/>
+                        <assign variable="contagem" expression="contagem - incremento"/>
+                    </while>
+                </then>
+                <else>
+                    <while expression="contagem &lt;= ultimoValor">
+                        <output expression="contagem" newline="True"/>
+                        <assign variable="contagem" expression="contagem + incremento"/>
+                    </while>
+                </else>
+            </if>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+            <output expression="&quot;Exerc&#237;cio 7 com Do-While.&quot;" newline="True"/>
+            <assign variable="contagem" expression="primeiroValor"/>
+            <if expression="primeiroValor &gt; ultimoValor">
+                <then>
+                    <do expression="contagem &gt;= ultimoValor">
+                        <output expression="contagem" newline="True"/>
+                        <assign variable="contagem" expression="contagem - incremento"/>
+                    </do>
+                </then>
+                <else>
+                    <do expression="contagem &lt;= ultimoValor">
+                        <output expression="contagem" newline="True"/>
+                        <assign variable="contagem" expression="contagem - incremento"/>
+                    </do>
+                </else>
+            </if>
+            <output expression="&quot;FIM&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
